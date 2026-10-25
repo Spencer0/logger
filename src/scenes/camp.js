@@ -67,8 +67,10 @@ export class CampScene {
       if (c.id === 'babe') continue;
       const want = !!S.crew[c.id];
       if (want && !this.crewNodes[c.id]) {
-        const node = makeCrew(c.id); const a = -0.6 + i * 0.7;
-        node.position.set(Math.cos(a) * 3.2, 0, 3 + Math.sin(a) * 2.6); node.lookAt(0, 0, 3); node.scale.setScalar(0.85); node.userData.crewId = c.id;
+        // fixed spots around the fire that stay clear of Paul (-2.4, 5.4) and Babe (2.4, 1.6)
+        const spots = [[-3.4, 2.4], [-1.2, 0.6], [1.0, 0.2], [3.4, 4.8], [0.6, 6.4], [2.6, 6.8], [-1.0, 7.6], [-4.4, 4.4]];
+        const [sx, sz] = spots[i % spots.length];
+        const node = makeCrew(c.id); node.position.set(sx, 0, sz); node.lookAt(0, 0, 3); node.scale.setScalar(0.85); node.userData.crewId = c.id;
         this.scene.add(node); this.crewNodes[c.id] = node;
       }
       if (want) i++;
