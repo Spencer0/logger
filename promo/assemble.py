@@ -59,7 +59,7 @@ f.append(f"{cur}fade=t=out:st={TOTAL - 0.5:.2f}:d=0.5[vout]")
 alabels = []
 for i, start in events:
     ms = int(start * 1000)
-    f.append(f"[{idx_vo[i]}:a]aformat=sample_rates=44100:channel_layouts=mono,volume=1.6,adelay={ms}|{ms}[a_{i}]"); alabels.append(f'[a_{i}]')
+    f.append(f"[{idx_vo[i]}:a]aformat=sample_rates=44100:channel_layouts=mono,volume=1.0,adelay={ms}|{ms}[a_{i}]"); alabels.append(f'[a_{i}]')
 f.append(f"[{idx_music}:a]aformat=sample_rates=44100:channel_layouts=mono,volume=0.13,atrim=duration={TOTAL:.2f},afade=t=out:st={TOTAL - 1.5:.2f}:d=1.5[am]"); alabels.append('[am]')
 f.append(''.join(alabels) + f"amix=inputs={len(alabels)}:normalize=0:dropout_transition=0,alimiter=limit=0.95[aout]")
 cmd = ['ffmpeg', '-y', '-v', 'error', *inputs, '-filter_complex', ';'.join(f), '-map', '[vout]', '-map', '[aout]', '-t', f'{TOTAL:.2f}', '-r', str(FPS), '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', 'big_timber_tiktok.mp4']

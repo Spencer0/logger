@@ -2,7 +2,7 @@ import { createRequire } from "module"; const { chromium } = createRequire(impor
 const caps = {
   s1: ['I went to the', 'Trees of Mystery 🌲'],
   s2: ['and fell in love with', 'the Paul Bunyan lore 🪓'],
-  s3: ['so I spent weeks', 'painstakingly making', 'a game about it'],
+  s3: ['so I quickly cooked up', 'a game to scratch the itch 🪓'],
   s4: ['you chop trees as Paul 🪓'],
   s5: ['glowing knots = crits', 'rhythm = combos'],
   s6: ['ride Babe the Blue Ox', 'to the sawmill 🐂💨'],
