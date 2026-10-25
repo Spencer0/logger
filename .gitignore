@@ -1,0 +1,8 @@
+node_modules/
+test/shots/
+.DS_Store
+promo/raw/
+promo/frames/
+promo/ph1/
+promo/ph2/
+promo/vo/*.wav
