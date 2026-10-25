@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1b2a1f">
+<title>Big Timber — a Paul Bunyan logging game</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game">
+  <canvas id="c"></canvas>
+  <canvas id="o"></canvas>
+  <div id="hud" class="hidden">
+    <div class="pill" id="hud-money"><span class="ico">💰</span><span id="money">0</span></div>
+    <div class="pill" id="hud-logs"><span class="ico">🪵</span><span id="logs">0</span><span class="dim">/<span id="logcap">10</span></span></div>
+  </div>
+  <div id="toast"></div>
+  <div id="bottom" class="hidden"></div>
+  <div id="trail-ui" class="hidden">
+    <div id="steer-zone"><div id="steer-hint">◀ steer ▶</div></div>
+    <div id="jump-zone"><div id="jump-btn">JUMP<br><small>&amp; swing</small></div></div>
+  </div>
+  <div id="modal" class="hidden"><div id="modal-box"></div></div>
+  <div id="title" class="">
+    <div class="title-art"></div>
+    <h1>BIG TIMBER</h1>
+    <h2>a Paul Bunyan logging game</h2>
+    <button id="btn-start" class="big">▶ Start Logging</button>
+    <button id="btn-reset" class="small ghost hidden">Reset save</button>
+    <p class="hint">Chop trees · Ride Babe to the mill · Build the camp</p>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

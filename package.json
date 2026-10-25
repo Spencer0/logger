@@ -1,0 +1,11 @@
+{
+  "name": "big-timber",
+  "version": "0.1.0",
+  "description": "A Paul Bunyan logging game: chop trees, ride Babe the Blue Ox to the mill, build the camp.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node serve.js 8080",
+    "test": "node test/smoke.js"
+  }
+}
