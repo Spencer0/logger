@@ -86,6 +86,7 @@ export class ForestScene {
       { label: `🐂 Deliver <span class="dim">(${S.logs})</span>`, cls: 'gold' + (full ? ' pulse' : ''), id: 'btn-deliver', disabled: S.logs <= 0, onClick: () => this.g.go('trail') },
     ]);
   }
+  tapTargets() { return this.trees.filter((t) => t.state === 'alive').map((t) => { const k = t.knot ? project(this.camera, ...this.knotWorld(t).toArray()) : null; const p = project(this.camera, t.x, this.treeTopY(t) * 0.45, t.z); return { slot: t.slot, x: p.x, y: p.y, knot: k && { x: k.x, y: k.y } }; }); }
   treeScreen() { const t = this.trees.find((t) => t.state === 'alive') || this.trees[1]; const p = project(this.camera, t.x, this.treeTopY(t) * 0.45, t.z); return { x: p.x, y: p.y }; }
   treeTopY(tr) { return TREE[tr.kind].h * tr.scale; }
   knotWorld(tr) { const T = TREE[tr.kind]; return new THREE.Vector3(tr.x, T.trunkH * tr.scale * tr.knot.ry, tr.z + T.r * tr.scale * 0.9 + 0.15); }

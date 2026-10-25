@@ -1,0 +1,68 @@
+[
+ {
+  "id": "s1",
+  "seg": "photo1",
+  "text": "I went to the Trees of Mystery and stood under a forty nine foot Paul Bunyan.",
+  "dur": 3.65
+ },
+ {
+  "id": "s2",
+  "seg": "photo2",
+  "text": "I fell in love with the lore.",
+  "dur": 1.38
+ },
+ {
+  "id": "s3",
+  "seg": "photo2",
+  "text": "So I spent weeks, painstakingly, making a game about it.",
+  "dur": 3.24
+ },
+ {
+  "id": "s4",
+  "seg": "forest",
+  "text": "You chop trees as Paul.",
+  "dur": 1.27
+ },
+ {
+  "id": "s5",
+  "seg": "forest",
+  "text": "Hit the glowing knots for crits, and keep the rhythm for combos.",
+  "dur": 2.94
+ },
+ {
+  "id": "s6",
+  "seg": "trail",
+  "text": "Then you ride Babe the Blue Ox to the sawmill.",
+  "dur": 2.02
+ },
+ {
+  "id": "s7",
+  "seg": "trail",
+  "text": "Drift the corners, jump the logs, and don't spill your cargo.",
+  "dur": 3.22
+ },
+ {
+  "id": "s8",
+  "seg": "camp",
+  "text": "Sell the lumber, build the camp, and hire the whole crew.",
+  "dur": 2.93
+ },
+ {
+  "id": "s9",
+  "seg": "camp",
+  "text": "Yes. Including Sport, the Reversible Dog.",
+  "dur": 2.47
+ },
+ {
+  "id": "s10",
+  "seg": "end",
+  "text": "It's free in your browser. Link's in the comments.",
+  "dur": 2.16
+ },
+ {
+  "id": "s11",
+  "seg": "end",
+  "text": "Go fell some trees.",
+  "dur": 1.04
+ }
+]
