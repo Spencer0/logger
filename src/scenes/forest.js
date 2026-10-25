@@ -14,7 +14,7 @@ export class ForestScene {
   constructor(game) {
     this.g = game; this.scene = new THREE.Scene(); this.camera = new THREE.PerspectiveCamera(50, 0.5, 0.1, 500);
     this.parts = new Particles3D(260); this.scene.add(this.parts.mesh); this.labels = new Labels();
-    this.ray = new THREE.Raycaster(); this.trees = []; this.built = null; this.slots = [{ x: -3.0, z: -6 }, { x: 0, z: 1 }, { x: 3.0, z: -6 }];
+    this.ray = new THREE.Raycaster(); this.trees = []; this.built = null; this.slots = [{ x: -2.7, z: -6 }, { x: 0, z: 1 }, { x: 2.7, z: -6 }];
   }
   enter() {
     this.region = D.region();
@@ -33,11 +33,11 @@ export class ForestScene {
     const maxH = Math.max(...this.region.trees.map((t) => TREE[t.kind].h));
     const fov = 55, t = Math.tan(fov / 2 * Math.PI / 180), a = Math.max(0.4, this.g.aspect);
     this.camera.fov = fov; this.camera.updateProjectionMatrix();
-    const widthZ = this.slots[0].z + (Math.abs(this.slots[0].x) + 2.2) / (t * a);
+    const widthZ = this.slots[0].z + (Math.abs(this.slots[0].x) + 1.9) / (t * a);
     const heightZ = this.slots[1].z + (maxH * 1.25) / (2 * t);
     const z = Math.max(widthZ, heightZ);
-    this.camBase = new THREE.Vector3(0, maxH * 0.42, z);
-    this.camLook = new THREE.Vector3(0, maxH * 0.6, -1);
+    this.camBase = new THREE.Vector3(0, maxH * 0.38, z);
+    this.camLook = new THREE.Vector3(0, maxH * 0.44, -1);
     this.camera.position.copy(this.camBase); this.camera.lookAt(this.camLook);
   }
   buildWorld() {
