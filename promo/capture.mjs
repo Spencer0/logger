@@ -29,7 +29,7 @@ await clip('camp', async (page) => {
   await page.mouse.click(f.x * page.sc, f.y * page.sc); await page.waitForTimeout(1600);
   await page.evaluate(() => { const b = document.querySelector('#modal [data-buy="6"]'); b.scrollIntoView({ block: 'center' }); }); await page.waitForTimeout(900);
   await page.click('#modal [data-buy="6"]'); await page.waitForTimeout(1800);
-  await page.click('#modal [data-close]'); await page.waitForTimeout(16000);
+  await page.click('#modal [data-close]'); await page.waitForTimeout(34000);
 });
 // Forest: Thunder Axe in Redwood Ridge, spam all three trees, hit knots
 await clip('forest', async (page) => {
@@ -63,4 +63,11 @@ await clip('trail', async (page) => {
   if (held) await page.keyboard.up(held);
   await page.waitForTimeout(2500);
 });
+await clip('results', async (page) => {
+  await page.evaluate(() => { const S = window.__S; S.perks.wagon = 4; S.perks.hooves = 3; S.logs = 48; S.money = 3180; S.regions.oak = true; S.region = 'oak'; S.crew.inkslinger = true; S.stats.deliveries = 6; });
+  await start(page); await page.evaluate(() => window.__game.go('trail')); await page.waitForTimeout(300); await page.mark('start');
+  await page.evaluate(() => { const t = window.__game.scenes.trail; t.pos = t.trackLen - 70; t.countdown = 0.01; t.time = 38.2; });
+  const t0 = Date.now(); while (Date.now() - t0 < 60000) { const fin = await page.evaluate(() => window.__game.scenes.trail.resultsShown); if (fin) break; await page.waitForTimeout(300); }
+  await page.waitForTimeout(14000);
+}, [360, 640]);
 const prev = fs.existsSync('raw/meta.json') ? JSON.parse(fs.readFileSync('raw/meta.json')) : {}; fs.writeFileSync('raw/meta.json', JSON.stringify(Object.assign(prev, META), null, 1)); await b.close(); console.log('capture done', JSON.stringify(META));

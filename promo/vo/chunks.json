@@ -1,0 +1,254 @@
+[
+ {
+  "id": "w00",
+  "text": "This weekend I went",
+  "s": 1.0,
+  "e": 2.38
+ },
+ {
+  "id": "w01",
+  "text": "and visited a 49",
+  "s": 2.38,
+  "e": 3.68
+ },
+ {
+  "id": "w02",
+  "text": "foot Paul",
+  "s": 3.68,
+  "e": 4.38
+ },
+ {
+  "id": "w03",
+  "text": "Bunyan. This cool place",
+  "s": 4.38,
+  "e": 5.82
+ },
+ {
+  "id": "w04",
+  "text": "called the Trees of",
+  "s": 5.82,
+  "e": 6.58
+ },
+ {
+  "id": "w05",
+  "text": "Mystery right off the",
+  "s": 6.58,
+  "e": 7.36
+ },
+ {
+  "id": "w06",
+  "text": "highway. They have all",
+  "s": 7.36,
+  "e": 8.48
+ },
+ {
+  "id": "w07",
+  "text": "sorts of stories about",
+  "s": 8.48,
+  "e": 9.42
+ },
+ {
+  "id": "w08",
+  "text": "the lore of Paul",
+  "s": 9.42,
+  "e": 10.24
+ },
+ {
+  "id": "w09",
+  "text": "Bunyan I thought this",
+  "s": 10.24,
+  "e": 11.42
+ },
+ {
+  "id": "w10",
+  "text": "was so fun that",
+  "s": 11.42,
+  "e": 12.68
+ },
+ {
+  "id": "w11",
+  "text": "I had to quickly",
+  "s": 12.68,
+  "e": 13.34
+ },
+ {
+  "id": "w12",
+  "text": "cook up a game",
+  "s": 13.34,
+  "e": 14.12
+ },
+ {
+  "id": "w13",
+  "text": "to scratch the itch",
+  "s": 14.12,
+  "e": 15.18
+ },
+ {
+  "id": "w14",
+  "text": "In this game,",
+  "s": 15.18,
+  "e": 16.34
+ },
+ {
+  "id": "w15",
+  "text": "you can chop the",
+  "s": 16.34,
+  "e": 17.06
+ },
+ {
+  "id": "w16",
+  "text": "logs down as",
+  "s": 17.06,
+  "e": 17.68
+ },
+ {
+  "id": "w17",
+  "text": "Paul, you can upgrade",
+  "s": 17.68,
+  "e": 18.9
+ },
+ {
+  "id": "w18",
+  "text": "your axe,",
+  "s": 18.9,
+  "e": 19.64
+ },
+ {
+  "id": "w19",
+  "text": "hit the critical spots",
+  "s": 19.64,
+  "e": 20.62
+ },
+ {
+  "id": "w20",
+  "text": "on the tree,",
+  "s": 20.62,
+  "e": 21.32
+ },
+ {
+  "id": "w21",
+  "text": "all that good stuff.",
+  "s": 21.32,
+  "e": 22.16
+ },
+ {
+  "id": "w22",
+  "text": "And you can ride",
+  "s": 22.16,
+  "e": 23.7
+ },
+ {
+  "id": "w23",
+  "text": "his ox.",
+  "s": 23.7,
+  "e": 24.6
+ },
+ {
+  "id": "w24",
+  "text": "I wanted some drifting",
+  "s": 24.6,
+  "e": 25.38
+ },
+ {
+  "id": "w25",
+  "text": "mechanics and some jumping",
+  "s": 25.38,
+  "e": 26.58
+ },
+ {
+  "id": "w26",
+  "text": "mechanics, so I built",
+  "s": 26.58,
+  "e": 27.86
+ },
+ {
+  "id": "w27",
+  "text": "that stuff in as",
+  "s": 27.86,
+  "e": 28.52
+ },
+ {
+  "id": "w28",
+  "text": "well. And then after",
+  "s": 28.52,
+  "e": 29.88
+ },
+ {
+  "id": "w29",
+  "text": "you collect the logs",
+  "s": 29.88,
+  "e": 30.62
+ },
+ {
+  "id": "w30",
+  "text": "and sell it,",
+  "s": 30.62,
+  "e": 31.46
+ },
+ {
+  "id": "w31",
+  "text": "you can upgrade your",
+  "s": 31.46,
+  "e": 32.28
+ },
+ {
+  "id": "w32",
+  "text": "camp to meet all",
+  "s": 32.28,
+  "e": 33.12
+ },
+ {
+  "id": "w33",
+  "text": "of his different friends",
+  "s": 33.12,
+  "e": 34.47
+ },
+ {
+  "id": "w34",
+  "text": "It's pretty cool.",
+  "s": 34.47,
+  "e": 35.51
+ },
+ {
+  "id": "w35",
+  "text": "Check it out if",
+  "s": 35.51,
+  "e": 36.09
+ },
+ {
+  "id": "w36",
+  "text": "you want.",
+  "s": 36.09,
+  "e": 36.63
+ },
+ {
+  "id": "w37",
+  "text": "I don't really care",
+  "s": 36.63,
+  "e": 37.27
+ },
+ {
+  "id": "w38",
+  "text": "if you do or",
+  "s": 37.27,
+  "e": 37.73
+ },
+ {
+  "id": "w39",
+  "text": "not, it's for me,",
+  "s": 37.73,
+  "e": 38.53
+ },
+ {
+  "id": "w40",
+  "text": "but the link is",
+  "s": 38.53,
+  "e": 39.27
+ },
+ {
+  "id": "w41",
+  "text": "in the comments.",
+  "s": 39.27,
+  "e": 40.410000000000004
+ }
+]
